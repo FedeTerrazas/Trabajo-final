@@ -1,0 +1,459 @@
+/* INICIO PAGINA SIN MARGENES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTE A UTILIZAR */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* FUENTE A UTILIZAR */
+
+.contenedor{
+    width: 100%;
+    display: grid;
+}
+
+/* SECCION CONTENEDOR HEADER */
+
+.headerContenedor{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #2a99FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/* SECCION ESTILOS NAVEGACION IZQUIERDA */
+
+.seccionIzquierda{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoTitulo{
+    display: flex;
+    gap: 10px;
+}
+
+.logoTitulo h1{
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+/* SECCION ESTILOS NAVEGACION DERECHA */
+.seccionDerecha{
+    display: flex;
+    align-items: flex-end;
+}
+
+.navegacion{
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+
+.navMenu{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navCliente{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+/* ESTILO HOVER BARRA NAVEGACION + ESTILOS LI / A */
+
+.navegacion li a:hover{
+    background-color: #FFFFFF;
+    color: #2a99FF;
+}
+
+.navegacion li{
+    list-style: none;
+    padding: 10px;
+}
+
+.navegacion li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* SLIDER */
+
+.carousel-inner img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ESTILOS MAIN INDEX*/
+
+.contenedorMain{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "ladoIzq tecoInt tecoInt ladoDer"
+    "ladoIzq iot iot ladoDer"
+    "ladoIzq servDigitales servDigitales ladoDer"
+    "ladoIzq integracion integracion ladoDer";
+}
+
+.ladoIzq{ 
+    grid-area: ladoIzq;
+}
+.ladoDer{ 
+    grid-area: ladoDer;
+}
+.tecoInt{ 
+    grid-area: tecoInt;
+}
+.iot{ 
+    grid-area: iot; 
+}
+.servDigitales{ 
+    grid-area: servDigitales;
+}
+.integracion{ 
+    grid-area: integracion;
+}
+
+.tecoIntFlex{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.tituloServicio{
+    font-size: 25px;
+}
+
+.tecoIntFlex li{
+    list-style: none;
+}
+
+/* ESTILOS IMAGENES MAIN */
+
+.imagenMain{
+    width: 350px;
+    height: 250px;
+}
+
+
+/* ESTILOS FOOTER */
+
+.footNav{
+    width: 100%;
+    height: auto;
+    background-color: #2a99FF;
+    color: #FFFFFF;
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "ladoIzq footInfo footInfo footInfo footInfo ladoDer"
+      "footEnd footEnd footEnd footEnd footEnd footEnd";
+}
+
+.footNav li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footNav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* ESTILOS FOOTER INFORMACION GENERAL, SE DIVIDE EN 4 COLUMNAS + ESPACIOS LATERALES */
+
+.footInfo{ 
+    grid-area: footInfo; 
+}
+
+.footInfoBox{
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.columna ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS FOOTER FIN PAGINA */
+
+.footEnd{ 
+    grid-area: footEnd; 
+    padding: 10px;
+    font-size: 16px;
+}
+
+.footEnd li{
+    text-align: center;
+}
+
+
+
+/* ESTILOS MAIN PRODCUTOS Y SERVICIOS*/
+
+.tituloProd{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedorMain-prod{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "ladoIzq tecoMaritima tecoMaritima ladoDer"
+    "ladoIzq servComu servComu ladoDer"
+    "ladoIzq telCorp telCorp ladoDer"
+    "ladoIzq servMay servMay ladoDer"
+    "ladoIzq sistPrivTeco sistPrivTeco ladoDer"
+    "ladoIzq solWireless solWireless ladoDer";
+}
+
+.tecoMaritima{ 
+    grid-area: tecoMaritima;
+}
+.servComu{ 
+    grid-area: servComu; 
+}
+.telCorp{ 
+    grid-area: telCorp;
+}
+.servMay{ 
+    grid-area: servMay;
+}
+.sistPrivTeco{ 
+    grid-area: sistPrivTeco;
+}
+.solWireless{ 
+    grid-area: solWireless;
+}
+
+.prodServFlex{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.tituloServicio{
+    font-size: 25px;
+}
+
+.prodServFlex li{
+    list-style: none;
+    text-align: justify;
+}
+
+.descripcionServ{
+    padding-right: 20px ;
+}
+
+
+/* ESTILOS MAIN - QUIENES SOMOS*/
+
+.tituloQuienes{
+    text-align: center;
+    padding: 20px;
+}
+
+.quienesDesc{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.contenedorMain-quienes{
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "ladoIzq proy1 proy2 proy3 ladoDer"
+    "ladoIzq proy4 proy5 proy6 ladoDer"
+    "ladoIzq proy7 proy8 proy9 ladoDer"; 
+}
+
+.ladoIzq{ 
+    grid-area: ladoIzq; 
+}
+.proy1{ 
+    grid-area: proy1;
+ }
+.proy2{ 
+    grid-area: proy2; 
+}
+.proy3{ 
+    grid-area: proy3; 
+}
+.proy4{ 
+    grid-area: proy4; 
+}
+.proy5{ 
+    grid-area: proy5;
+}
+.proy6{ 
+    grid-area: proy6; 
+}
+.proy7{ 
+    grid-area: proy7; 
+}
+.proy8{ 
+    grid-area: proy8;
+}
+.proy9{ 
+    grid-area: proy9; 
+}
+.ladoDer{ 
+    grid-area: ladoDer; 
+}
+
+.quienesFlex{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quienesFlex li{
+    list-style: none;
+    padding-top: 10px;
+    text-align: center;
+}   
+
+
+/* ESTILO CONTACTENOS */
+.banner{
+    height: 400px;
+    width: auto;
+    background-image: url(contacto.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px){
+    .headerContenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerContenedor h1{
+        font-size: 2.2rem;
+    }
+
+    .seccionIzquierda{
+        width: 100%;
+        display: flex;
+    }
+
+    .logoTitulo{
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .seccionDerecha{
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .navMenu{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedorMain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tecoIntFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vpn{
+        width: 100%;
+    }
+
+    .footInfoBox{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .columna{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columna ul{
+        padding: 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footEnd{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .footEnd ul{
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
