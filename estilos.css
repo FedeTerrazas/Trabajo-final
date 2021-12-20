@@ -222,8 +222,6 @@ body{
     text-align: center;
 }
 
-
-
 /* ESTILOS MAIN PRODCUTOS Y SERVICIOS*/
 
 .tituloProd{
@@ -284,6 +282,11 @@ body{
 
 .descripcionServ{
     padding-right: 20px ;
+}
+
+.imgProductos{
+    width: 350px;
+    height: 250px;
 }
 
 
@@ -427,6 +430,7 @@ body{
     width: 50%;
     border: 0px;
     margin: auto;
+    padding-top: 20px;
 }
 
 .usuarioConsulta{
@@ -434,12 +438,15 @@ body{
     width: 95%;
     justify-content: space-around;
     padding: 20px;
+    padding-bottom: 100px;
 }
 
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 576px){
+
+    /* HEADER */
     .headerContenedor{
         display: flex;
         flex-direction: column;
@@ -477,6 +484,10 @@ body{
         text-align: center;
     }
 
+    /* ------------- */
+
+    /* MAIN INDEX */
+
     .contenedorMain{
         display: flex;
         flex-direction: column;
@@ -485,12 +496,123 @@ body{
     .tecoIntFlex{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .vpn{
+    .tecoIntFlex ul{
         width: 100%;
     }
+
+    .imagenMain{
+        width: 75%;
+        height: 300px;
+    }
+
+    /* ------------- */
+
+    /* MAIN QUIENES */
+
+    .tituloQuienes{
+        padding-bottom: 0px;
+    }
+
+    .contenedorMain-quienes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quienesFlex ul{
+        width: 90%;
+    }
+
+    /* ------------- */
+
+    /* MAIN PRODUCTOS */
+
+    .tituloProd{
+        padding-bottom: 0px;
+    }
+
+    .contenedorMain-prod{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prodServFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prodServFlex ul{
+        width: 100%;
+    }
+
+    .imagenProductos{
+        width: 75%;
+        height: 300px;
+    }
+
+    /* ------------- */
+
+    /* MAIN CONTACTENOS */
+
+    .container__general_titulo{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .form-register{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+    }
+
+    .form-register {
+        width: 85%;
+        margin: auto;
+        color: #FFFFFF;
+        padding-bottom: 50px;
+    }
+
+    #mensaje{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 100%;
+    }
+
+    .controls{
+        width: 100%;
+    }
+    
+    .botons {
+        width: 100%;
+    }
+
+    /* ------------- */
+
+    /* MAIN ACCESO */
+
+    .fieldAcceso{
+        width: 75%;
+    }
+    
+    .usuarioConsulta{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+     /* ------------- */
+    
+    /* FOOTER */
 
     .footInfoBox{
         display: flex;
@@ -520,5 +642,7 @@ body{
         display: flex;
         justify-content: center;
     }
+
+    /* ------------- */
 
 }
